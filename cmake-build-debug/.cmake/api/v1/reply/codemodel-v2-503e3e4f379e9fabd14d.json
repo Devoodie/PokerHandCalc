@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/PokerHand/cmake-build-debug",
-		"source" : "D:/PokerHand"
+		"build" : "E:/PokerHand/cmake-build-debug",
+		"source" : "E:/PokerHand"
 	},
 	"version" : 
 	{
