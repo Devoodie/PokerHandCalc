@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/PokerHand/cmake-build-debug/
+cmake_ninja_workdir = E$:/PokerHand/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target PokerHand
 
@@ -49,8 +49,14 @@ cmake_ninja_workdir = D$:/PokerHand/cmake-build-debug/
 
 build cmake_object_order_depends_target_PokerHand: phony || CMakeFiles/PokerHand.dir
 
-build CMakeFiles/PokerHand.dir/main.cpp.obj: CXX_COMPILER__PokerHand_unscanned_Debug D$:/PokerHand/main.cpp || cmake_object_order_depends_target_PokerHand
+build CMakeFiles/PokerHand.dir/main.cpp.obj: CXX_COMPILER__PokerHand_unscanned_Debug E$:/PokerHand/main.cpp || cmake_object_order_depends_target_PokerHand
   DEP_FILE = CMakeFiles\PokerHand.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\PokerHand.dir
+  OBJECT_FILE_DIR = CMakeFiles\PokerHand.dir
+
+build CMakeFiles/PokerHand.dir/functions.cpp.obj: CXX_COMPILER__PokerHand_unscanned_Debug E$:/PokerHand/functions.cpp || cmake_object_order_depends_target_PokerHand
+  DEP_FILE = CMakeFiles\PokerHand.dir\functions.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\PokerHand.dir
   OBJECT_FILE_DIR = CMakeFiles\PokerHand.dir
@@ -63,7 +69,7 @@ build CMakeFiles/PokerHand.dir/main.cpp.obj: CXX_COMPILER__PokerHand_unscanned_D
 #############################################
 # Link the executable PokerHand.exe
 
-build PokerHand.exe: CXX_EXECUTABLE_LINKER__PokerHand_Debug CMakeFiles/PokerHand.dir/main.cpp.obj
+build PokerHand.exe: CXX_EXECUTABLE_LINKER__PokerHand_Debug CMakeFiles/PokerHand.dir/main.cpp.obj CMakeFiles/PokerHand.dir/functions.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PokerHand.dir
@@ -78,7 +84,7 @@ build PokerHand.exe: CXX_EXECUTABLE_LINKER__PokerHand_Debug CMakeFiles/PokerHand
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\PokerHand\cmake-build-debug && "D:\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D E:\PokerHand\cmake-build-debug && "E:\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\PokerHand\cmake-build-debug && "D:\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\PokerHand -BD:\PokerHand\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D E:\PokerHand\cmake-build-debug && "E:\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\PokerHand -BE:\PokerHand\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +113,7 @@ build PokerHand: phony PokerHand.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/PokerHand/cmake-build-debug
+# Folder: E:/PokerHand/cmake-build-debug
 
 build all: phony PokerHand.exe
 
@@ -118,14 +124,14 @@ build all: phony PokerHand.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/PokerHand/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake E$:/PokerHand/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/PokerHand/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake E$:/CLion$ 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake E$:/PokerHand/CMakeLists.txt: phony
 
 
 #############################################

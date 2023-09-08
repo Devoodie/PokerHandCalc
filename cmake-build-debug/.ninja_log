@@ -1,0 +1,4 @@
+# ninja log v5
+0	37	7158442144750281	CMakeFiles/PokerHand.dir/functions.cpp.obj	583337dffde61989
+0	272	7158442297112722	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
+273	396	7158442298328967	PokerHand.exe	ea84b76bdebcc6c5
