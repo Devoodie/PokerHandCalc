@@ -55,12 +55,6 @@ build CMakeFiles/PokerHand.dir/main.cpp.obj: CXX_COMPILER__PokerHand_unscanned_D
   OBJECT_DIR = CMakeFiles\PokerHand.dir
   OBJECT_FILE_DIR = CMakeFiles\PokerHand.dir
 
-build CMakeFiles/PokerHand.dir/functions.cpp.obj: CXX_COMPILER__PokerHand_unscanned_Debug E$:/PokerHand/functions.cpp || cmake_object_order_depends_target_PokerHand
-  DEP_FILE = CMakeFiles\PokerHand.dir\functions.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\PokerHand.dir
-  OBJECT_FILE_DIR = CMakeFiles\PokerHand.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PokerHand
@@ -69,7 +63,7 @@ build CMakeFiles/PokerHand.dir/functions.cpp.obj: CXX_COMPILER__PokerHand_unscan
 #############################################
 # Link the executable PokerHand.exe
 
-build PokerHand.exe: CXX_EXECUTABLE_LINKER__PokerHand_Debug CMakeFiles/PokerHand.dir/main.cpp.obj CMakeFiles/PokerHand.dir/functions.cpp.obj
+build PokerHand.exe: CXX_EXECUTABLE_LINKER__PokerHand_Debug CMakeFiles/PokerHand.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PokerHand.dir

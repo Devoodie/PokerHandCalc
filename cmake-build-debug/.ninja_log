@@ -1,4 +1,9 @@
 # ninja log v5
-0	37	7158442144750281	CMakeFiles/PokerHand.dir/functions.cpp.obj	583337dffde61989
-0	272	7158442297112722	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
-273	396	7158442298328967	PokerHand.exe	ea84b76bdebcc6c5
+0	275	7159846571996740	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
+276	338	7159846572612254	PokerHand.exe	5ef1680ab8bd4269
+2	296	7159859927546973	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
+296	363	7159859928187406	PokerHand.exe	5ef1680ab8bd4269
+1	283	7159861526821145	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
+283	347	7159861527431618	PokerHand.exe	5ef1680ab8bd4269
+2	294	7159864815097662	CMakeFiles/PokerHand.dir/main.cpp.obj	fb41e883caa3e780
+295	362	7159864815723097	PokerHand.exe	5ef1680ab8bd4269
