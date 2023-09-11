@@ -69,9 +69,9 @@ vector<cards> deckMaker() {
     return deck;
 };
 
-void cardFinder(vector<cards>&deck, string &cardvalue, string &suiteinput){
+void deckModifier(vector<cards>& deck, string& cardvalue, string& suiteinput, vector<cards>& cardsinPlay){
     int number;
-    switch(cardvalue.at(0)){
+    switch(tolower(cardvalue.at(0))){
         case 'j':
             number = 11;
             break;
@@ -84,18 +84,20 @@ void cardFinder(vector<cards>&deck, string &cardvalue, string &suiteinput){
         case 'a':
             number = 14;
             break;
-        case '1':
-            number = 10;
-            break;
         default:
             number = stoi(cardvalue);
             break;  //make logic to loop if data is invalid
     }
     for (int i = 0; i <= size(deck); ++i){
         if(deck[i].suite == suiteinput and deck[i].number == number){
-            ;
+            cardsinPlay.push_back(deck[i]);
+            deck.erase(deck.begin()+i);
+            break;
         }
     }
 }
 
+void handCalc(){
+
+}
 #endif //POKERHAND_CARDS_H
